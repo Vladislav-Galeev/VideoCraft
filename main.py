@@ -34,3 +34,5 @@ async def create_video(files: list[UploadFile]):
             return {"Загрузите пожалуйста файл .mp4"}
     
     return FileResponse(path=merging_videos(files), filename='video.mp4', media_type='multipart/form-data')
+
+
